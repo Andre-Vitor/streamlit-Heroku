@@ -15,8 +15,10 @@ import os
 from PIL import Image, ImageOps
 import matplotlib.pyplot as plt
 
+
 st.title('Haziness')
 st.write("This web app calculates the Haziness measure.")
+st.write("#### Olar266")
 st.write("""
          It can also calculate RMS, Histogram Spread,
          Michelson, Weber and Rizzi metrics.""")
@@ -37,7 +39,7 @@ N = st.number_input("Select number of iterations: ",min_value=1, value=1000, ste
 s = st.number_input("Select the size of the patches: ",min_value=1, value=2, step=1)
 
 
-st.text_area("Sequence input",
+st.sidebar.text_area("Sequence input",
                         value= 10, #valor inicial
                         height=250)
 
@@ -132,32 +134,32 @@ import matplotlib.pyplot as plt
 # plt.plot()
 st.pyplot(fig)
 
-#%%
+#%% Append data to existing chart
 '---'
 import time
 
-# Get some data.
-data = np.random.randn(10, 2)
+# # Get some data.
+# data = np.random.randn(10, 2)
 
-# Show the data as a chart.
-chart = st.line_chart(data)
+# # Show the data as a chart.
+# chart = st.line_chart(data)
 
-# Wait 1 second, so the change is clearer.
-time.sleep(10)
+# # Wait 1 second, so the change is clearer.
+# time.sleep(10)
 
-# Grab some more data.
-data2 = np.random.randn(10, 2)
+# # Grab some more data.
+# data2 = np.random.randn(10, 2)
 
-# Append the new data to the existing chart.
-chart.add_rows(data2)
+# # Append the new data to the existing chart.
+# chart.add_rows(data2)
 
-# Wait 1 second, so the change is clearer.
-time.sleep(10)
+# # Wait 1 second, so the change is clearer.
+# time.sleep(10)
 
-# Grab some more data.
-data2 = np.random.randn(10, 2)
+# # Grab some more data.
+# data2 = np.random.randn(10, 2)
 
-# Append the new data to the existing chart.
-chart.add_rows(data2)
+# # Append the new data to the existing chart.
+# chart.add_rows(data2)
 
 
